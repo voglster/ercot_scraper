@@ -9,5 +9,5 @@ def get_url(formatted_date=None):
   return 'http://www.ercot.com/content/cdr/html/real_time_spp'
 
 df = pd.read_html(get_url())[0]
-df[0].to_csv('out.csv')
+df.to_csv('out.csv')
 
